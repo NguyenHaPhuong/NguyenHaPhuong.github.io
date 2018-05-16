@@ -3,57 +3,81 @@
 <head>
 <title>Gallery</title>
 <link rel="stylesheet" type="text/css" href="MainPage.css">
-<meta name="viewport" content="width=device-width initial-scale=1">
-<link rel="icon" href="Images/snowflake.png" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="MainPage.css">
 </head>
-
 <body>
+		<div class="toggle">
+			<i class="fa fa-bars menu" aria-hidden="true"></i>
 
-	<div id="header">
-		<div id="logo">
-			<img src="Images/Stamp.png"/>
 		</div>
-		
-		<ul id="navbar">
-			<li><a href="MainPage.html"  >HOME</a></li>
-			<li><a href="AboutMe.html" >ABOUT ME</a></li>
-			<li><a href="MyCV.html">MY CV</a></li>
-			<li class="current"><a href="Gallery.html">GALLERY</a></li>
-		</ul>
-		
-		
+
+
+	<nav>
+
+
+
+
+				<ul>
+
+					<li><a href="MainPage.html" >HOME</a></li>
+					<li><a href="AboutMe.html">ABOUT ME</a></li>
+					<li><a href="MyCV.html">MY CV</a></li>
+					<li  class="current"><a href="Gallery.html">GALLERY</a></li>
+				</ul>
+		</div>
+	</nav>
+
 		<div id= "gallery">
 
-		<h2>Here are some videos i made</span></h2>
-		<br></br>
-		<h3>PowToon Videos</span></h3>
-		
+		<h2><span style="font-family:Century Gothic; color:#3366ff;"> Here are some videos i made</span></h2>
+
+
+
 		<video width= "720px" height="480px" controls>
-		<source src= "Videos/Problem Trigger.mp4" type="video/mp4"> </video>
-		<p> <b>Problem Trigger</b></p>
-		<br></br>
+		<source src= "Videos/Logic bomb.mp4" type="video/mp4"> </video><br/>
+			<br/><br/>
+		<b><span style="font-family:Century Gothic;font-size: 20px;background-color: white;">Logic Bomb</span></b>
+		<br/><br/>
 		<video width= "720px" height="480px" controls>
-		<source src= "Videos/Rootkit - YouTube.MP4" type="video/mp4"> </video>
-		<p> <b>RootKit</b></p>
-		<br></br>
+		<source src= "Videos/Malware Protection.mp4" type="video/mp4"> </video><br/>
+			<br/><br/>
+		<b><span style="font-family:Century Gothic;font-size: 20px; background-color: white;">Malware Protection</span></b>
+		<br/><br/>
 		<video width= "720px" height="480px" controls>
-		<source src= "Videos/ScareWare.mp4" type="video/mp4"> </video>
-		<p> <b>ScareWare</b></p>
-		<br></br>
+		<source src= "Videos/Problem Trigger.mp4" type="video/mp4"> </video><br/>
+			<br/><br/>
+	  <b><span style="font-family:Century Gothic; font-size: 20px;background-color: white;">Problem Trigger</span></b>
+		<br/><br/>
 		<video width= "720px" height="480px" controls>
-		<source src= "Videos/RansomWare.mp4" type="video/mp4"> </video>
-		<p> <b>RansomWare</b></p>
-		<br></br>
+		<source src= "Videos/RansomWare.mp4" type="video/mp4"> </video><br/>
+			<br/><br/>
+		<b><span style="font-family:Century Gothic; font-size: 20px;background-color: white;">RansomWare</span></b>
+		<br/><br/>
 		<video width= "720px" height="480px" controls>
 		<source src= "Videos/Worm.mp4" type="video/mp4"> </video>
-		<p> <b>Worm</b></p>
+			<br/><br/>
+	  <b><span style="font-family:Century Gothic;font-size: 20px; background-color: white;">Worm</span></b>
 		<br></br>
-		
-</div>		
+
+</div>
 </div>
 
-	
-			
-	
+<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+		$('.menu').click(function(){
+			$('ul').toggleClass('active');
+		})
+	})
+</script>
+
+
+
 </body>
 </html>
+<style>
+
+body{ background-image: url('Images/Background1.jpg'); background-size: 1280px auto;;}
+</style>
