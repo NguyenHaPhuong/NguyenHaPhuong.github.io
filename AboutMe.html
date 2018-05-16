@@ -4,53 +4,74 @@
 <title>AboutMe</title>
 <link rel="stylesheet" type="text/css" href="MainPage.css">
 <meta name="viewport" content="width=device-width initial-scale=1">
-<link rel="icon" href="Images/snowflake.png" />
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="MainPage.css">
+<link rel="icon" href="/Images/icon.jpg" />
 </head>
-
 <body>
+		<div class="toggle">
+			<i class="fa fa-bars menu" aria-hidden="true"></i>
 
-	<div id="header">
-		<div id="logo">
-			<img src="Images/Stamp.png"/>
 		</div>
-		
-		<ul id="navbar">
-			<li><a href="MainPage.html"  >HOME</a></li>
-			<li class="current"><a href="AboutMe.html" >ABOUT ME</a></li>
-			<li><a href="MyCV.html">MY CV</a></li>
-			<li><a href="Gallery.html">GALLERY</a></li>
-		</ul>
-		
+
+
+	<nav>
+
+
+
+
+				<ul>
+
+					<li><a href="MainPage.html" >HOME</a></li>
+					<li  class="current"><a href="AboutMe.html">ABOUT ME</a></li>
+					<li><a href="MyCV.html">MY CV</a></li>
+					<li><a href="Gallery.html">GALLERY</a></li>
+				</ul>
+		</div>
+	</nav>
+
 		<div id = "name">
 		<h1><b>NGUYEN HA PHUONG</b></h1>
-		<br></br>
+
 		</div>
 		<div id = "aboutme">
 			<div id= "pic">
 		<img src="Images/MyAvatar.jpg" width="200px"; height="250px">
 		</div>
-    <p><b>Birthday: </b> 04/01/1996</p>
-	<p><b>Religion: </b> Fee-Thinker</p>
-   <br> </br>
-			<p>I am interested in Programming and Maths as it can motivate me think logically and creatively. learning math develops critical thinking and problem-solving skills, it helps me smarter.
-		            Learning programming teaches me persistence problem-solving skills and how to think logically.
-			</p>
-			<br> </br>
-            <p>I am able to design the website and create videos. I had chance to train my skills during my internship in Republic Polytechnic in five months </p>
-            <br> </br>
-		<p>My Internship Company Supervisor judged of me : "Phuong is a diligent student who is able to complete the work assigned to her.
-			She is able to learn new skills and knowledge on her own which is one of her strengths."</p>
-		<br/>	
-		<p>I have ability to combine my knowledge with practical work experience showing myself to be self-motivated, organized and capable of working under pressure.</p>
-			<br> </br>
-			<p>I am responsible person and have high team spirit when working as a team. I participated in many events in school,
-			 that trained my teamwork skills. Besides, in class, i also study as team, therefore, i am confident with my teamwork skills.</p>
-			 <br> </br>
-			<p>I am creative and have an inquiring mind to create new things. I always willing to learn the new things. For me "Better late than never".</p>
-	
+		<p><b>Birthday: </b> 04/01/1996</p>
+		<p><b>Religion: </b> Fee-Thinker</p>
+
+				<p class="p1">I am interested in Programming and Maths as it can motivate me think logically and creatively. learning math develops critical thinking and problem-solving skills, it helps me smarter.
+			            Learning programming teaches me persistence problem-solving skills and how to think logically.
+				<br><br>
+
+	         I am able to design the website and create videos. I had chance to train my skills during my internship in Republic Polytechnic in five months
+	            <br><br>
+							My Internship Company Supervisor judged of me : "Phuong is a diligent student who is able to complete the work assigned to her.
+				She is able to learn new skills and knowledge on her own which is one of her strengths."
+			<br/> <br>
+			I have ability to combine my knowledge with practical work experience showing myself to be self-motivated, organized and capable of working under pressure.
+				<br><br>
+				I am responsible person and have high team spirit when working as a team. I participated in many events in school,
+				 that trained my teamwork skills. Besides, in class, i also study as team, therefore, i am confident with my teamwork skills.
+				 <br><br>
+				I am creative and have an inquiring mind to create new things. I always willing to learn the new things. For me "Better late than never".</p>
+
+
  </div>
-	
-			
-	
+
+ <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+	 <script type="text/javascript">
+		 $(document).ready(function(){
+		 $('.menu').click(function(){
+			 $('ul').toggleClass('active');
+		 })
+	 })
+ </script>
+
 </body>
 </html>
+<style>
+.p1{text-align: justify;}
+body{ background-image: url('Images/Background.jpg'); background-size: 1280px 830px;}
+</style>
