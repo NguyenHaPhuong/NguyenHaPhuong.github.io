@@ -2,27 +2,34 @@
 <html>
 <head>
 <title>HaPhuong</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 <link rel="stylesheet" type="text/css" href="MainPage.css">
-<meta name="viewport" content="width=device-width initial-scale=1">
-<link rel="icon" href="Images/snowflake.png" />
 </head>
 <body>
+		<div class="toggle">
+			<i class="fa fa-bars menu" aria-hidden="true"></i>
 
-	<div id="header">
-		<div id="logo">
-			<img src="Images/Stamp.png"/>
 		</div>
-		
-		<ul id="navbar">
-			<li class="current"><a href="MainPage.html" >HOME</a></li>
-			<li><a href="AboutMe.html">ABOUT ME</a></li>
-			<li><a href="MyCV.html">MY CV</a></li>
-			<li><a href="Gallery.html">GALLERY</a></li>
-		</ul>
+
+
+	<nav>
+
+				<ul>
+
+					<li class="current"><a href="MainPage.html" >HOME</a></li>
+					<li><a href="AboutMe.html">ABOUT ME</a></li>
+					<li><a href="MyCV.html">MY CV</a></li>
+					<li><a href="Gallery.html">GALLERY</a></li>
+				</ul>
+		</div>
+	</nav>
 		<div id="avartar">
 			<img src="Images/MyAvatar.jpg"/>
 		</div>
-		
+
 		<div id="welcome">
 			<h2> Welcome to my website! </h2>
 		</div>
@@ -33,13 +40,22 @@
 			<h2> Hope you guys enjoy it! :D </h2>
 		</div>
 		<div id="quote">
-			<img src="Images/Quote.jpg"/>
+		<img src="Images/Quote.jpg" height="250" width="1263"/>
 		</div>
-		
-		
-	</div>
-	
-			
-	
+
+
+	<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+			$('.menu').click(function(){
+				$('ul').toggleClass('active');
+			})
+		})
+	</script>
+
 </body>
 </html>
+<style>
+
+body{ background-image: url('Images/Background.jpg'); background-size:1280px 1030px;}
+</style>
