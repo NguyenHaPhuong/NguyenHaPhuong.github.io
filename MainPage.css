@@ -43,9 +43,10 @@ font-size: 20px; font-family: Century Gothic; font-weight:bold; }
 .p1{text-align: justify;}
 
 
-#avartar {float: right;margin-right: 450px;margin-top: 30px;}
-#quote{float: none ;margin-top: 20px; margin-bottom: 45px;}
-#welcome{margin-top: 100px;margin-left: 500px; color: blue;}
+#home {width: 1263px; margin: 0 auto;}
+#avartar {margin-left: 520px;margin-top: 80px;}
+#quote{width: 1263px;float: none ; margin-top: 30px;margin-bottom: 100px;}
+#welcome{margin-top: 20px;margin-left: 500px; color: blue;}
 #welcome2{margin-left: 320px; color: blue;}
 #welcome3{margin-left: 500px; color: blue;}
 #aboutme{ margin-left: 300px; width: 700px; color: blue; margin-bottom: 100px; }
