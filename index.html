@@ -1,15 +1,123 @@
 <!DOCTYPE html>
 <html>
-<head>
-<title>Nguyen Ha Phuong</title>
-<link href="style.css" type="text/css" rel="stylesheet">
-<link rel="icon" href="icon.png" type="image/x-icon">
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {font-family: "Times New Roman", Georgia, Serif;}
+h1,h2,h3,h4,h5,h6 {
+    font-family: "Playfair Display";
+    letter-spacing: 5px;
+}
 
-</head>
+
+</style>
 <body>
-<div class="heading">
-<span class="title" >Welcome to Ha Phuong's house</span>
-<button class="start"><a href="MainPage.html">LET'S SEE</a></button>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:4px;" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i></a>
+    <a href="#home" class="w3-bar-item w3-button">Jennifer Nguyen</a>
+    <!-- Right-sided navbar links. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+      <a href="#about" class="w3-bar-item w3-button"><i class="fa fa-user"></i>About Me</a>
+      <a href="#mycv" class="w3-bar-item w3-button"><i class="fa fa-file"></i> My CV</a>
+      <a href="#ITportfolio" class="w3-bar-item w3-button"><i class="fa fa-th">IT Portfolio</i></a>
+    </div>
+  </div>
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()"><i class="fa fa-user"></i> About Me</a>
+    <a href="#mycv" class="w3-bar-item w3-button" onclick="toggleFunction()"><i class="fa fa-file"></i> My CV</a>
+    <a href="#ITportfolio" class="w3-bar-item w3-button" onclick="toggleFunction()"><i class="fa fa-th"></i> IT Portfolio</a>
+  </div>
 </div>
+
+
+
+<!-- Header -->
+<header class="w3-display-container w3-content w3-wide" style="max-width:1600px;min-width:500px" id="home">
+  <img class="w3-image" src="Images/Happiness1.jpg" alt="HappinessQuote" width="1600" height="800">
+  <div class="w3-display-bottomleft w3-padding-large w3-opacity">
+    <h1 class="w3-xxlarge">Nguyen Ha Phuong</h1>
+  </div>
+</header>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:1100px">
+
+  <!-- About Section -->
+  <div class="w3-content w3-container w3-padding-64" id="about">
+
+    <div class="w3-col m6 w3-center w3-padding-large">
+      <p><b><i class="fa fa-user w3-margin-right"></i>My Name</b></p>
+      <p><b>Nguyen Ha Phuong - Jennifer</b></p>
+      <p><b>Birthday: </b> 04/01/1996</p>
+
+     <img src="Images/AboutMe.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Myphoto" width="600" height="1050">
+    </div>
+
+
+
+    <div class="w3-col m6 w3-padding-large">
+      <h1 class="w3-center">About Me</h1><br>
+
+
+ <!-- Hide this text on small devices -->
+
+    <p  class="w3-large">I am interested in Programming and Maths as it can motivate me think logically and creatively. Learning math develops critical thinking and problem-solving skills, it helps me smarter.
+              Learning programming teaches me persistence problem-solving skills and how to think logically.
+              <br/> I am able to design the website and create videos. I had chance to train my skills during my internship in Republic Polytechnic in five months and one month as a Application Devloper.
+              Beside that, I was trained at A*STAR Bioinformatics Institute as a web developer in one month.
+              <br/>
+              I have ability to combine my knowledge with practical work experience showing myself to be self-motivated, organized and capable of working under pressure.
+            <br/>  My Internship Company Supervisor judged of me : "Phuong is a diligent student who is able to complete the work assigned to her.
+				She is able to learn new skills and knowledge on her own which is one of her strengths."
+        <br/>
+     	I am creative and have an inquiring mind to create new things, so I always willing to learn the new things. For me "Better late than never".</p>
+
+  </div>
+</div>
+
+  <hr>
+  <div class="w3-container w3-padding-64" id="mycv">
+
+       <iframe src="https://drive.google.com/file/d/1etyKxLEJnQ95Ro33MuGipVLmOtt6jFfX/preview" width="750" height="750"></iframe>
+
+   </div>
+     <hr>
+  <!-- Contact Section -->
+  <div class="w3-container w3-padding-64" id="ITportfolio">
+    <h1>ITportfolio</h1><br>
+  </div>
+
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-light-grey w3-padding-24 w3-xlarge">
+
+            <i class="fa fa-facebook-official w3-hover-opacity"></i>
+            <i class="fa fa-instagram w3-hover-opacity"></i>
+            <i class="fa fa-twitter w3-hover-opacity"></i>
+            <i class="fa fa-linkedin w3-hover-opacity"></i>
+<p><a href="mailto:JenniferNguyen934@gmail.com" class="w3-hover-text-green">Jennifernguyen934@gmail.com</a></p>
+
+</footer>
+<script>
+
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+  }
+</script>
 </body>
 </html>
