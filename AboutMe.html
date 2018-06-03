@@ -1,76 +1,88 @@
 <!DOCTYPE html>
 <html>
-<head>
-<title>AboutMe</title>
-<link rel="stylesheet" type="text/css" href="MainPage.css">
-<meta name="viewport" content="width=device-width initial-scale=1">
-<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<title>About Me</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <link rel="icon" href="icon.png" />
-</head>
-<body>
-		<div class="toggle">
-			<i class="fa fa-bars menu" aria-hidden="true"></i>
-
-		</div>
-
-
-	<nav>
-
-
-
-
-				<ul>
-
-					<li><a href="MainPage.html" >HOME</a></li>
-					<li  class="current"><a href="AboutMe.html">ABOUT ME</a></li>
-					<li><a href="MyCV.html">MY CV</a></li>
-					<li><a href="Gallery.html">GALLERY</a></li>
-				</ul>
-		</div>
-	</nav>
-
-		<div id = "name">
-		<h1><b>NGUYEN HA PHUONG</b></h1>
-
-		</div>
-		<div id = "aboutme">
-			<div id= "pic">
-		<img src="Images/MyAvatar.jpg" width="200px"; height="250px">
-		</div>
-		<p><b>Birthday: </b> 04/01/1996</p>
-		<p><b>Religion: </b> Fee-Thinker</p>
-
-				<p class="p1">I am interested in Programming and Maths as it can motivate me think logically and creatively. learning math develops critical thinking and problem-solving skills, it helps me smarter.
-			            Learning programming teaches me persistence problem-solving skills and how to think logically.
-				<br><br>
-
-	         I am able to design the website and create videos. I had chance to train my skills during my internship in Republic Polytechnic in five months
-	            <br><br>
-							My Internship Company Supervisor judged of me : "Phuong is a diligent student who is able to complete the work assigned to her.
-				She is able to learn new skills and knowledge on her own which is one of her strengths."
-			<br/> <br>
-			I have ability to combine my knowledge with practical work experience showing myself to be self-motivated, organized and capable of working under pressure.
-				<br><br>
-				I am responsible person and have high team spirit when working as a team. I participated in many events in school,
-				 that trained my teamwork skills. Besides, in class, i also study as team, therefore, i am confident with my teamwork skills.
-				 <br><br>
-				I am creative and have an inquiring mind to create new things. I always willing to learn the new things. For me "Better late than never".</p>
-
-
- </div>
-
- <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
-	 <script type="text/javascript">
-		 $(document).ready(function(){
-		 $('.menu').click(function(){
-			 $('ul').toggleClass('active');
-		 })
-	 })
- </script>
-
-</body>
-</html>
 <style>
-.p1{text-align: justify;}
-body{ background-image: url('Images/Background.jpg'); background-size: 1280px 830px;}
+header,footer {font-family: "Times New Roman", Georgia, Serif;}
+body,h1,h2{font-family: "Raleway", sans-serif}
+body, html {height: 100%}
+p {line-height: 2; }
+.justify{text-align: justify;}
+footer{font-size: 20px;}
 </style>
+<header>
+
+  <div class="w3-top">
+    <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:4px;" id="myNavbar">
+      <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+        <i class="fa fa-bars"></i></a>
+      <a href="index.html" class="w3-bar-item w3-button">Jennifer Nguyen</a>
+      <!-- Right-sided navbar links. Hide them on small screens -->
+      <div class="w3-right w3-hide-small">
+        <a href="AboutMe.html" class="w3-bar-item w3-button"><i class="fa fa-user"></i>About Me</a>
+        <a href="MyCV.html" class="w3-bar-item w3-button"><i class="fa fa-file"></i> My CV</a>
+        <a href="ITportfolio.html" class="w3-bar-item w3-button"><i class="fa fa-th">IT Portfolio</i></a>
+      </div>
+    </div>
+    <!-- Navbar on small screens -->
+    <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+      <a href="AboutMe.html" class="w3-bar-item w3-button" onclick="toggleFunction()"><i class="fa fa-user"></i> About Me</a>
+      <a href="MyCV.html" class="w3-bar-item w3-button" onclick="toggleFunction()"><i class="fa fa-file"></i> My CV</a>
+      <a href="ITportfolio.html" class="w3-bar-item w3-button" onclick="toggleFunction()"><i class="fa fa-th"></i> IT Portfolio</a>
+    </div>
+  </div>
+</header>
+
+<body>
+
+<div class="w3-pale-red w3-row w3-padding-64">
+
+      <div class="w3-col m6 w3-center w3-padding-large w3-hide-small">
+        <p class="w3-text-grey"><b><i class="fa fa-user w3-margin-right "></i>My Name</b></p>
+        <p class="w3-text-grey"><b>Nguyen Ha Phuong - Jennifer</b></p>
+        <p class="w3-text-grey"><b>Birthday: </b> 04/01/1996</p>
+
+       <img src="Images/AboutMe.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Myphoto" width="600" height="1050">
+      </div>
+
+      <!-- Hide this text on small devices -->
+     <div class="w3-col m6 w3-padding-large">
+       <h1 class="w3-center w3-text-grey"><b>About Me</b></h1><br></br></br>
+        <p class="justify"><i>I am interested in Programming and Maths as it can motivate me think logically and creatively. Learning math develops critical thinking and problem-solving skills, it helps me smarter.
+                  Learning programming teaches me persistence problem-solving skills and how to think logically.
+                  <br/> I am able to design the website and create videos. I had chance to train my skills during my internship in Republic Polytechnic in five months and one month as a Application Devloper.
+                  Beside that, I was trained at A*STAR Bioinformatics Institute as a web developer in one month.
+                  <br/>
+                  I have ability to combine my knowledge with practical work experience showing myself to be self-motivated, organized and capable of working under pressure.
+                <br/>  My Internship Company Supervisor judged of me : "Phuong is a diligent student who is able to complete the work assigned to her.
+            She is able to learn new skills and knowledge on her own which is one of her strengths."
+            <br/>
+          I am creative and have an inquiring mind to create new things, so I always willing to learn the new things. For me "Better late than never".</i></p>
+      </div>
+    </div>
+
+
+<script>
+
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+  }
+</script>
+</body>
+<footer class="w3-center w3-gray ">
+
+<a href="https://www.linkedin.com/in/nguyen-phuong-409543159/" target="_blank"><i class="fa fa-linkedin w3-hover-opacity" style="margin-top:30px"></i></a>
+<p style="padding-bottom:20px"><i class="fa fa-envelope"> </i> <a href="mailto:JenniferNguyen934@gmail.com" class="w3-hover-text-blue">Jennifernguyen934@gmail.com</a></p>
+
+</footer>
+</html>
