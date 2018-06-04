@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<title>About Me</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="icon" href="icon.png" />
+<style>
+body{background-color: #C69A6B;}
+header,footer {font-family: "Times New Roman", Georgia, Serif;}
+body,h1,h2{font-family: "Raleway", sans-serif}
+body, html {height: 100%}
+p {line-height: 2; }
+.justify{text-align: justify;}
+footer{font-size: 20px;}
+</style>
+<header>
+
+  <div class="w3-top">
+    <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:4px;" id="myNavbar">
+      <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+        <i class="fa fa-bars"></i></a>
+      <a href="index.html" class="w3-bar-item w3-button">Jennifer Nguyen</a>
+      <!-- Right-sided navbar links. Hide them on small screens -->
+      <div class="w3-right w3-hide-small">
+        <a href="AboutMe.html" class="w3-bar-item w3-button"><i class="fa fa-user"></i>About Me</a>
+        <a href="MyCV.html" class="w3-bar-item w3-button"><i class="fa fa-file"></i> My CV</a>
+        <a href="ITportfolio.html" class="w3-bar-item w3-button"><i class="fa fa-th">IT Portfolio</i></a>
+      </div>
+    </div>
+    <!-- Navbar on small screens -->
+    <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+      <a href="AboutMe.html" class="w3-bar-item w3-button" onclick="toggleFunction()"><i class="fa fa-user"></i> About Me</a>
+      <a href="MyCV.html" class="w3-bar-item w3-button" onclick="toggleFunction()"><i class="fa fa-file"></i> My CV</a>
+      <a href="ITportfolio.html" class="w3-bar-item w3-button" onclick="toggleFunction()"><i class="fa fa-th"></i> IT Portfolio</a>
+    </div>
+  </div>
+</header>
+
+<body>
+
+<div class=" w3-row w3-padding-64">
+
+      <div class="w3-col m6 w3-center w3-padding-large w3-hide-small">
+        <p style="color:white;"><b><i class="fa fa-user w3-margin-right "></i>My Name</b></p>
+        <p style="color:white;"><b>Nguyen Ha Phuong - Jennifer</b></p>
+        <p style="color:white;"><b>Web Developer</b></p>
+
+       <img src="Images/AboutMe.jpg" class="w3-round w3-image" alt="Myphoto" width="600" height="1050">
+      </div>
+
+      <!-- Hide this text on small devices -->
+     <div class="w3-col m6 w3-padding-large">
+       <h1 class="w3-center" style="color:white;"><b>About Me</b></h1><br></br></br>
+        <p class="justify"><i>I am interested in Programming and Maths as it can motivate me think logically and creatively. Learning math develops critical thinking and problem-solving skills, it helps me smarter.
+                  Learning programming teaches me persistence problem-solving skills and how to think logically.
+                  <br/> I am able to design the website and create videos. I had chance to train my skills during my internship in Republic Polytechnic in five months and one month as a E-learning Devloper.
+                  Beside that, I was trained at A*STAR Bioinformatics Institute as a web developer in one month.
+                  <br/>
+                  I have ability to combine my knowledge with practical work experience showing myself to be self-motivated, organized and capable of working under pressure.
+                <br/>  Mr Teo Tian Guan - my Internship Company Supervisor judged of me : "Phuong is a diligent student who is able to complete the work assigned to her.
+            She is able to learn new skills and knowledge on her own which is one of her strengths."<br>
+            Mr Andy Lee - my Programming Lecturer comment that :" Ha Phuong is a diligent and conscientious student who is serious in whatever she does. She demonstrates
+responsibility in completing all assignments and submitting them on time. Her strengths and
+interest lie in Mathematics and Programming."</i>
+            <br/></p>
+      </div>
+    </div>
+
+
+<script>
+
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+  }
+</script>
+</body>
+<footer class="w3-center w3-gray w3-padding-small">
+<p><a href="https://www.linkedin.com/in/nguyen-phuong-409543159/" target="_blank"><i class="fa fa-linkedin w3-hover-opacity"></i></a><br><i class="fa fa-phone"></i> +65 98138481<br>
+  <i class="fa fa-envelope" style="width:30px"> </i> <a href="mailto:JenniferNguyen934@gmail.com" class="w3-hover-text-blue">jennifernguyen934@gmail.com</a></p>
+
+</footer>
+</html>
