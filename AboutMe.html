@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<title>About Me</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="icon" href="icon.png" />
+<style>
+
+header,footer {font-family: "Times New Roman", Georgia, Serif;}
+body,h1,h2{font-family: "Raleway", sans-serif; background-color: #C69A6B}
+body, html {height: 100%}
+p {line-height: 2; }
+.justify{text-align: justify;}
+footer{font-size: 20px;}
+#myNavbar{background-color: #0005; padding:9px; }
+</style>
+<header>
+
+  <div class="w3-top w3-text-white">
+    <div class="w3-bar" style="letter-spacing:4px;" id="myNavbar">
+      <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+        <i class="fa fa-bars"></i></a>
+      <a href="index.html" class="w3-bar-item w3-button">Jennifer Nguyen</a>
+      <!-- Right-sided navbar links. Hide them on small screens -->
+      <div class="w3-right w3-hide-small">
+        <a href="AboutMe.html" class="w3-bar-item w3-button"><i class="fa fa-user"></i>About Me</a>
+        <a href="MyCV.html" class="w3-bar-item w3-button"><i class="fa fa-file"></i> My CV</a>
+        <a href="ITportfolio.html" class="w3-bar-item w3-button"><i class="fa fa-th"> Portfolio</i></a>
+      </div>
+    </div>
+    <!-- Navbar on small screens -->
+    <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+      <a href="AboutMe.html" class="w3-bar-item w3-button" onclick="toggleFunction()"><i class="fa fa-user"></i> About Me</a>
+      <a href="MyCV.html" class="w3-bar-item w3-button" onclick="toggleFunction()"><i class="fa fa-file"></i> My CV</a>
+      <a href="ITportfolio.html" class="w3-bar-item w3-button" onclick="toggleFunction()"><i class="fa fa-th"></i> Portfolio</a>
+    </div>
+  </div>
+</header>
+
+<body >
+
+<div class=" w3-row w3-padding-64">
+
+      <div class="w3-col m6 w3-center w3-padding-large ">
+        <p style="color:white;"><b><i class="fa fa-user w3-margin-right "></i>My Name</b></p>
+        <p style="color:white;"><b>Nguyen Ha Phuong - Jennifer</b></p>
+        <p style="color:white;"><b>Web Developer</b></p>
+
+       <img src="Images/AboutMe.jpg" class="w3-round w3-image" alt="Myphoto" width="600" height="1050">
+      </div>
+
+      <!-- Hide this text on small devices -->
+     <div class="w3-col m6 w3-padding-large">
+       <h1 class="w3-center" style="color:white;"><b>About Me</b></h1><br></br>
+        <p class="justify"><i>I am interested in<b>   Web Developer</b>   and <b>  Maths</b>. Learning Math develops critical thinking and problem-solving skills. Programming a website teaches me persistence problem-solving skills and how to think logically. I am self-motivated, organized and capable of working under pressure.
+                  <br/> I have the ability to combine my knowledge with practical work experience. I gained practical experience during 5 months internship at <b>  Republic Polytechnic</b>   as an<b>   E-learning Developer</b>. And I interned at <b>  A*STAR Bioinformatics Institute</b>   as a <b>  Web developer</b>.
+              </i></p>
+        <p class="justify"><i> "Phuong is a diligent student who is able to complete the work assigned to her. She is able to learn new skills and knowledge on her own which is one of her strengths."
+              <span class="w3-right"><b>    Mr. Teo Tian Guan - My Internship Supervisor</b> </span></i> </p><br/>
+        <p class="justify"><i>  "Ha Phuong is a diligent and conscientious student who is serious in whatever she does. She demonstrates responsibility for completing all assignments and submitting them on time. Her strengths and interest lie in <b>  Mathematics</b>   and <b>  Programming</b>.  " <br/>
+    <span class="w3-right">  <b>  Mr. Andy Lee -  Programming Lecturer, Republic Polytechnic</b> </span> </i>
+            <br/></p>
+      </div>
+    </div>
+
+
+<script>
+
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className =  "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white" ;
+    } else {
+        navbar.className = navbar.className.replace("w3-card w3-animate-top w3-white", "");
+    }
+}
+
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+  }
+</script>
+</body>
+<footer class="w3-center w3-gray w3-padding-small">
+<p><a href="https://www.linkedin.com/in/nguyen-phuong-409543159/" target="_blank"><i class="fa fa-linkedin w3-hover-opacity"></i></a><br><i class="fa fa-phone"></i> +65 98138481<br>
+  <i class="fa fa-envelope" style="width:30px"> </i> <a href="mailto:JenniferNguyen934@gmail.com" class="w3-hover-text-blue">jennifernguyen934@gmail.com</a></p>
+
+</footer>
+</html>
